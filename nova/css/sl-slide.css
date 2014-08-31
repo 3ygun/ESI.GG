@@ -97,6 +97,7 @@
 /* Default styles for background colors */
 .sl-slide{
 	display: none;
+	z-index: 1;
 }
 .sl-slide-horizontal .sl-slide-inner {
 	background: #3498DB;
@@ -119,6 +120,9 @@
 	z-index: 100;
 }
 
+.sl-slider img{
+	z-index: 99;
+}
 .sl-slider h2, .sl-slider h3{
 	color: #fff;
 }

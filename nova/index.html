@@ -79,6 +79,8 @@
     <!-- /header -->
 
     <!--Slider-->
+	<!-- I can't seem to figure out how to make the text in the slider display over the top of the image. I tried fiddling with the z-index but no result. Probably best to take off
+	the sl-slider wrapper and add in a carousel instead. It's what is on the ESI.GG site.-->
     <section id="slide-show">
      <div id="slider" class="sl-slider-wrapper">
 
@@ -89,9 +91,11 @@
                 <div class="sl-slide-inner">
                     <div class="container">
                         <img class="pull-right" src="images/sample/slider/shuffle5pic1.jpeg" alt="" />
-                        <h2>Shuffle 5</h2>
-                        <h3 class="gap">Super Smash Brothers Brawl</h3>
-                        <a class="btn btn-large btn-transparent" href="http://www.shufflesmash.co.nf">Learn More</a>
+						<div class="container"  style="position: absolute">
+							<h2>Shuffle 5</h2>
+							<h3 class="gap">Super Smash Brothers Brawl</h3>
+							<a class="btn btn-large btn-transparent" href="http://www.shufflesmash.co.nf">Learn More</a>
+						</div>
                     </div>
                 </div>
             </div>
@@ -102,9 +106,11 @@
                 <div class="sl-slide-inner">
                     <div class="container">
                         <img class="pull-right" src="images/sample/slider/shuffle5pic2.jpg" alt="" />
-                        <h2>Shuffle 5</h2>
-                        <h3 class="gap">Super Smash Brothers Brawl</h3>
-                        <a class="btn btn-large btn-transparent" href="http://www.shufflesmash.co.nf">Learn More</a>
+						<div class="container" style="position: absolute">
+							<h2>Shuffle 5</h2>
+							<h3 class="gap">Super Smash Brothers Brawl</h3>
+							<a class="btn btn-large btn-transparent" href="http://www.shufflesmash.co.nf">Learn More</a>
+						</div>
                     </div>
                 </div>
             </div>
@@ -115,9 +121,11 @@
                 <div class="sl-slide-inner">
                    <div class="container">
                     <img class="pull-right" src="images/sample/slider/shuffle5pic3.jpg" alt="" />
+					<div class="container">
                     <h2>Events</h2>
                     <h3 class="gap">Events</h3>
                     <a class="btn btn-large btn-transparent" href="#">Learn More</a>
+					</div>
                 </div>
             </div>
         </div>
@@ -138,6 +146,9 @@
 </section>
 <!--/Slider-->
 
+<!-- This section is a white bar in between the slide show and the display. Can be taken out. I commented it out for now.-->
+
+<!--
 <section class="main-info">
     <div class="container">
         <div class="row-fluid">
@@ -151,24 +162,29 @@
         </div>
     </div>
 </section>
+-->
 
 <!--Services-->
-<section id="services">
-    <div class="container">
+<!--<section id="services">-->
+<div class="container" style="background-color:white; padding: 20px;">
+    <!--<div class="container">
         <div class="center gap">
             <h3>What We Offer</h3>
             <p class="lead">Look at some of the recent projects we have completed for our valuble clients</p>
-        </div>
+        </div>-->
 
+		<br>
+		<hr>
+		<br>
         <div class="row-fluid">
             <div class="span4">
                 <div class="media">
-                    <div class="pull-left">
-                        <i class="icon-globe icon-medium"></i>
-                    </div>
                     <div class="media-body">
-                        <h4 class="media-heading">Web Design</h4>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+						<img src="images/sample/slider/fundraisingEventsEdited.jpg" alt="" style="height:auto; width: 370px;">
+						<a class="btn btn-success btn-large blah" href="#" style="width:100%;">Fundraising Events</a>
+                        <p>At the heart of E-Sports Initiative and its nonprofit mission is a sustainable source of financial support: our video game tournaments and events. These fundraisers provide an environment for a community of both casual and competitive video game players to compete for prizes and support our causes- we thank you for your continued patronage.</p>
+
+
                     </div>
                 </div>
             </div>            
@@ -239,7 +255,8 @@
         </div>
 
     </div>
-</section>
+</div>
+<!--</section>-->
 <!--/Services-->
 
 <section id="recent-works">
